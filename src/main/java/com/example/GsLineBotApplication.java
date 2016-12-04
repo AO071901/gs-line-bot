@@ -19,7 +19,7 @@ public class GsLineBotApplication {
 	}
 
 	@EventMapping
-	public TextMessage handlerTextMessageEvent(MessageEvent<TextMessageContent> event) {
+	public TextMessage handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
 		System.out.println("event: " + event);
 		System.out.println("reply: " + event.getMessage().getText());
 		return new TextMessage(event.getMessage().getText());
